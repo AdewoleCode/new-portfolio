@@ -1,0 +1,565 @@
+/* body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* overflow: hidden; */
+}
+
+/* HEADER SECTION */
+/* HEADER SECTION */
+/* HEADER SECTION */
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(to right bottom, rgb(51, 51, 223), rgb(37, 37, 102));
+    border-radius: 0 0 80px 80px;
+    z-index: 1;
+    overflow-x: hidden;
+
+}
+
+header .logo {
+    height: 55px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 8px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* font-size: 1.6rem; */
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(184, 207, 233);
+    /* text-decoration: wavy; */
+}
+
+.cta {
+    display: none;
+}
+
+header .btn {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 16px 32px;
+    /* padding: 1rem 2rem; */
+    border-radius: 80px;
+    transition:  all .4s;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px solid lightblue;
+    color: blue;
+    cursor: pointer;
+}
+
+/* HEADER ENDS */
+/* HEADER ENDS */
+/* HEADER ENDS */
+
+/* INTRO SECTION */
+/* INTRO SECTION */
+/* INTRO SECTION */
+
+.intro {
+    height: 80vh;
+}
+
+.intro .img-box {
+    padding-top: 70px;
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.intro img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* .intro img {
+    height: 60%;
+    width: 55%;
+    margin: 0 auto;
+    transform: translatey(7.5rem);
+    display: block;
+} */
+
+/* .intro .img-box {
+    margin-top: 50px;
+} */
+
+.intro {
+    text-align: center;
+    color: white;
+    padding-top: 90px;
+
+}
+
+.intro h1 {
+    font-size: 70px;
+    /* font-size: 5rem; */
+    font-weight: 600;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.intro p {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+.shape {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate ease 10s infinite alternate;
+
+}
+
+.shape1 {
+    left: 30px;
+    top: 10%;
+}
+
+.shape2 {
+    width: 140px;
+    height: 140px;
+    left: 40%;
+    top: 41%;
+    background-color: rgba(85, 85, 226, 0.555);
+}
+
+.shape3 {
+    width: 330px;
+    height: 330px;
+    right: -2%;
+    top: -3%;
+    background-color: rgba(48, 228, 228, 0.52);
+}
+
+@keyframes rotate {
+    0% {transform: translateX(-8rem);}
+    25% {transform: translateY(-6rem);}
+    50% {transform: translateX(6rem);}
+    75% {transform: translateY(6rem);}
+    100% {transform: translateX(6rem);}
+}
+
+/* services section */
+/* services section */
+/* services section */
+/* services section */
+
+
+#services {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 10px;
+}
+
+.heading h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 20px 0;
+    color: rgb(59, 57, 57);
+}
+
+.heading p {
+    text-align: center;
+    font-size: 19px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}  
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.service-items .service {
+    border: 3px solid #ccc;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service-items .service:hover {
+    transform: translateY(-20px);
+    border-top: 2px solid rgb(66, 66, 228);
+}
+
+.service-items img {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.service-items .service h3 {
+    margin: 10px 0;
+
+}
+
+.service-items .service p {
+    color: #777;
+    font-size: 15px;
+    margin: 10px 0;
+
+}
+
+.service-items .service a{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(62, 62, 218);
+    border-bottom: 2px solid rgb(62, 62, 206);
+}
+
+/* consult section */
+/* consult section */
+/* consult section */
+
+
+#consult {
+    background-color: #c7c7c7;
+}
+
+.consult {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 30px 30px;
+    /* border: 1px solid black; */
+}
+
+.consult-text{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.consult-text .text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.consult-text img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.consult-text h2 {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 27px;
+}
+
+.consult-text .text{
+    color: #777;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.consult-text .text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.consult button {
+    background-color: white;
+    color: blue;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+.consult button:hover {
+    background-color: rgb(53, 53, 212);
+    color: white;
+}
+
+.consult-image {
+    width: 50%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.consult-image img {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+/* product section */
+/* product section */
+/* product section */
+
+#product {
+    background: linear-gradient(to bottom, rgba(46, 91, 255, 0.8), rgba(41,288,288, 1)), url(./bg.jpg);
+    /* background: linear-gradient(to bottom, rgba); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 40%;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    /* border: 3px solid red; */
+}
+
+.product-text {
+    /* border: 1px solid white; */
+}
+
+.product-text .product-p {
+    margin: 30px 0;
+    line-height: 1.5;
+    /* color: white; */
+}
+
+.product .phone {
+    width: 480px;
+    height: 650px;
+    transform: translateY(-35px);
+
+}
+
+.text-box2{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    /* color: white; */
+
+}
+
+.text-box2 img {
+    width: 35px;
+    height: 35px;
+    margin: 3px 0;
+}
+
+.text-box2 h3 {
+    margin: 5px 0;
+}
+
+.text-box2 .text {
+    /* border: 1px solid rgb(248, 248, 248); */
+    padding: 5px;
+}
+
+/* action section */
+/* action section */
+/* action section */
+
+#action {
+    background-color: white;
+    text-align: center; 
+    padding: 50px 10px ;
+}
+
+#action h2 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+#action p {
+    color: #777;
+    margin: 20px 0;
+    font-size: 20px;
+
+}
+
+#action button{
+    background-color: rgb(41, 41, 211);
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid blue;
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+#action button:hover  {
+    background-color: transparent;
+    border: 2px solid blue ;
+    color: black;
+}
+
+/* footer section */
+/* footer section */
+/* footer section */
+
+footer {
+    padding: 80px 5px;
+    color: white;
+    background-color: rgb(15, 14, 14) ;
+}
+
+.footer {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    padding: 5px 30px;
+    gap: 40px;
+}
+
+.footer-logo{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+}
+
+.links1{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+
+
+}
+
+.links2 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+
+
+}
+
+form{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+
+
+}
+
+.footer-logo img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer h4 a {
+    text-decoration: none;
+    color: #777;
+    cursor: pointer;
+}
+
+.footer h4 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer p{
+    color: #777;
+    font-size: 16px;
+}
+
+.footer form  input{
+    display: block;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.footer .submit {
+    color: white;
+    background-color: rgb(55, 55, 207);
+    cursor: pointer;
+}
+
+.footer .submit:hover {
+    background-color: rgb(62, 62, 170);
+}

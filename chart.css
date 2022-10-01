@@ -215,6 +215,8 @@ header .btn {
     padding: 10px;
 }
 
+
+
 .heading h2 {
     text-align: center;
     font-size: 32px;
@@ -241,6 +243,8 @@ header .btn {
     gap: 15px;
     flex-wrap: wrap;
     /* border: 1px solid red; */
+    /* animation-delay: 2s; */
+
 }
 
 .service-items .service {
@@ -250,6 +254,13 @@ header .btn {
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.3s;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+
+    /* animation-fill-mode: both; */
+
 }
 
 .service-items .service:hover {
@@ -562,4 +573,14 @@ form{
 
 .footer .submit:hover {
     background-color: rgb(62, 62, 170);
+}
+
+@keyframes first {
+    from {
+        opacity: 0%; transform: translateX(-500px);
+    }
+    to {
+        opacity: 100%; transform: translateX(0px) ;
+    }
+
 }
